@@ -46,7 +46,7 @@ function nivelDos() {
       let move = 0;
       key = event.keyCode;
       if (key == 38) {
-        move += 273;
+        move += 150;
         $("#smilo").animate({
           top: move + "px"
         });

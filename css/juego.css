@@ -16,16 +16,7 @@
     overflow: hidden;
     background-color: rgb(207, 250, 235);
 }
-#move{
-  
-    top: 50px;
-    left: 40px;
-    width: 50px;
-    height: 50px;
-    margin-top: 2em;
-    
-    background-color: rgb(134, 197, 134);
-}
+
 
 .floor{
     position: absolute;
@@ -85,7 +76,6 @@ background-color: none;
    
 }
  #bandera{
-     
     position: absolute;
     top:0;
     right:11216px;
@@ -176,3 +166,73 @@ background-color: none;
     align-items: center;
 }
 
+/* EN EL RESPONSIVE HAY COSAS QUE NO CUADRAN
+COMO EN LA VERSION DE PANTALLA COMPLETA PORQUE
+TENÍA QUE CAMBIAR TODA LA GENERACIÓN DE PIEDRAS Y 
+LA DISTANCIA DE LA BANDERA Y TODO*/
+
+@media (max-width: 600px){
+    html{
+        overflow: hidden;
+    }
+    body{
+        overflow: hidden;
+    }
+    #moa{
+        position: absolute;
+        top: 300px;
+        left: 10px;}
+     
+     #jugador{
+         height: 150px;
+         width: auto;
+         z-index: 2;
+     }
+     
+     #smilo{
+         position: absolute;
+         top: 315px;
+         left: 10px;
+     }
+     #jugador2{
+         height: 150px;
+         width: auto;
+         z-index: 2;
+     }
+
+     #rock1, #rock2, #rock3, #rock4{
+        background-color: rgb(207, 250, 235);
+        position: absolute;
+        top: 40px;
+        left: 500px;
+        transform: translate(0, -90px);
+        height: 50px;
+        width: auto;
+        
+    }
+
+    #bandera{
+        position: absolute;
+        top:155px;
+        right: 11216px;
+        height: 200px;
+        width: auto;
+        transform: translate(0, -307px);
+     }
+
+     .floor{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 40%;
+        background-color: rgb(26, 15, 15);
+        
+    }
+    
+    .floor img{
+        height: 80px;
+        width: auto;
+       
+        
+    }
+}

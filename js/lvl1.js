@@ -46,7 +46,7 @@ $(function() {
         let move = 0;
         key = event.keyCode;
         if (key == 38) {
-          move += 200;
+          move += 300;
           $("#moa").animate({
             top: move + "px"
           });

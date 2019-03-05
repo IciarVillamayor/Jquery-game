@@ -3,19 +3,22 @@
 }
 
 body{ 
-    height: 100vh;
-    width: auto;
+    height: 100%;
+    width: 100%;
     display: flex;
     background-image: linear-gradient(
         rgb(207, 250, 235),
         rgb(146, 211, 188),
         rgb(55, 82, 72)
         );
+        padding-bottom: 15em;
+        overflow: hidden;
     
 }
 
 
 .container{
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -37,19 +40,56 @@ h4{
 
 #menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-
+    width: 80%;
+    margin-bottom: 5em;
 }
 
-#menu img{
+#menu a img{
     height: 100px;
     width: auto;
-    padding: 1em;
+    padding: 2em;
 }
 
 a{
     width: 100px;
     height: auto;
+}
+
+@media (max-width: 600px){
+
+   
+    body{ 
+        height: 100%;
+        width: 100%;
+        display: flex;
+       overflow: hidden;
+        
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #menu{
+        height: 100%;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 2em;
+       
+    }
+
+    #menu a{
+        margin-right: 5em;
+    }
+    #menu a img{
+        height: 70px;
+        width: auto;
+        padding: 1em;
+    }
+
 }
